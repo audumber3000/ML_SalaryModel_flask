@@ -1,4 +1,4 @@
-# BasicMLModelFlaskDeploy
+# Basic ML Model deployment using Flask
 Tutorial for Deploying a Basic ML model using flask
 
 ### Steps to executed 
