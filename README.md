@@ -2,7 +2,7 @@
 Tutorial for Deploying a Basic ML model using flask
 
 ### Steps to executed 
-1.  Clone the project ` git clone https://github.com/kaustuvkunal/BasicMLModelFlaskDeploy.git
+1.  Clone the project ` git clone https://github.com/kaustuvkunal/BasicMLModelFlaskDeploy.git`
 2. Change current directory to project directory  `cd BasicMLModelFlaskDeploy `
 3. Install required dependencies/libraries  `pip3 install requirements.txt `
 4. Buid & save model  `python model.py`
