@@ -4,7 +4,7 @@ from sklearn.externals import joblib
 import pickle
 
 app = Flask(__name__)
-
+loaded_model = joblib.load('model.pkl')
 
 @app.route("/")
 
@@ -26,5 +26,4 @@ def make_prediction():
 
 
 if __name__ == '__main__':
-    loaded_model = joblib.load('model.pkl')
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(debug=True)
