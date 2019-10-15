@@ -13,7 +13,7 @@
         <h1> Predict standard salary from candidate  experience </h1>
          <form action = {{ url_for('make_prediction')}} method = "post">
           <p>Enter candidate experience (in yrs):</p>
-         <p><input type="float" name = "exp" /></p>
+         <p><input type="float" name = "exp" value="" required/></p>
          <p><input type = "submit" value="predict"/>   </p>
       </form>
 
