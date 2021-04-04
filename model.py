@@ -7,7 +7,7 @@ import joblib
 
 
 # Importing the dataset
-dataset = pd.read_csv('dataset/Sales_Salary_Data.csv')
+dataset = pd.read_csv('/home/audumber/Desktop/BasicMLModelFlaskDeploy/dataset/Sales_Salary_Data.csv')
 
 # seprate feature & target
 X = dataset.iloc[:, :-1].values
@@ -27,12 +27,12 @@ y_pred = regressor.predict(X_test)
 
 # Saving serialized model to disk
 
-pickle.dump(regressor, open('model.pkl','wb'))
+pickle.dump(regressor, open('/home/audumber/Desktop/BasicMLModelFlaskDeploy/model.pkl','wb'))
 #joblib.dump(regressor, 'model.pkl')
 
 
 # Loading model to compare the results
-model = pickle.load(open('model.pkl','rb'))
+model = pickle.load(open('/home/audumber/Desktop/BasicMLModelFlaskDeploy/model.pkl','rb'))
 #model = joblib.load('model.pkl')
 
 print("Regressor model output", regressor.predict([[1.8]]))
